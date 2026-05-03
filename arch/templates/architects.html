@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ architect["name"] }} {% endblock %}
+
+{% block content %}
+
+<div class="container detail-page">
+
+    <a href="/" class="btn btn-outline-dark back-btn">⬅ Back</a>
+
+    <div class="detail-card">
+
+        <div class="detail-row">
+
+            <div class="detail-content">
+
+                <h1 class="detail-title">{{ architect["name"] }}</h1>
+
+                <div class="detail-line"></div>
+
+                <p class="detail-text">
+                    {{ architect["bio"] }}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
